@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="570.0" prefWidth="1169.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.gui.AddVoitureController">
+   <children>
+      <Label layoutX="326.0" layoutY="155.0" text="Marque" />
+      <Label layoutX="326.0" layoutY="196.0" text="Model" />
+      <Label layoutX="326.0" layoutY="244.0" text="Couleur" />
+      <Label layoutX="326.0" layoutY="290.0" text="serie" />
+      <Label layoutX="328.0" layoutY="334.0" text="prix" />
+      <Label layoutX="326.0" layoutY="373.0" text="image" />
+      <TextField fx:id="tfmarque" layoutX="401.0" layoutY="151.0" />
+      <TextField fx:id="tfserie" layoutX="400.0" layoutY="286.0" />
+      <TextField fx:id="tfprix" layoutX="400.0" layoutY="330.0" />
+      <TextField fx:id="tfimage" layoutX="400.0" layoutY="369.0" />
+      <Button fx:id="btnajouter" layoutX="498.0" layoutY="439.0" mnemonicParsing="false" onAction="#ajouter" text="sauvgarder" />
+      <ImageView fx:id="image_update" fitHeight="168.0" fitWidth="196.0" layoutX="635.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../Desktop/3A/PIdev_desktopfinal/src/images/drag-and-drop.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="importer" layoutX="716.0" layoutY="339.0" mnemonicParsing="false" onAction="#importerImageUpdate" style="-fx-background-color: #86A8E7; -fx-background-radius: 2em;" text="Importer">
+         <font>
+            <Font name="Calibri Italic" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <VBox layoutX="7.0" layoutY="98.0" prefHeight="472.0" prefWidth="189.0" style="-fx-background-color: #1e2b3c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="98.0">
+         <children>
+            <Pane prefHeight="109.0" prefWidth="189.0" />
+            <Button fx:id="btnvoitures" blendMode="HARD_LIGHT" mnemonicParsing="false" onMouseClicked="#voitures" prefHeight="40.0" prefWidth="190.0" text="voitures" />
+            <Button fx:id="btnhotels" blendMode="OVERLAY" mnemonicParsing="false" onMouseClicked="#hotels" prefHeight="40.0" prefWidth="190.0" text="hotels" />
+            <Button fx:id="btnvols" blendMode="OVERLAY" mnemonicParsing="false" onMouseClicked="#vols" prefHeight="40.0" prefWidth="190.0" text="vols" />
+            <Button fx:id="btncamping" blendMode="OVERLAY" mnemonicParsing="false" onMouseClicked="#camping" prefHeight="40.0" prefWidth="190.0" text="camping" />
+            <Button fx:id="btnbon_plans" blendMode="OVERLAY" mnemonicParsing="false" onMouseClicked="#bon_plans" prefHeight="40.0" prefWidth="190.0" text="bon plans" />
+            <Button fx:id="btnblog" blendMode="OVERLAY" mnemonicParsing="false" onMouseClicked="#blog" prefHeight="40.0" prefWidth="190.0" text="blog" />
+            <Button fx:id="btnutilisateurs" blendMode="OVERLAY" mnemonicParsing="false" onMouseClicked="#utilisateurs" prefHeight="40.0" prefWidth="190.0" text="utilisateurs" />
+         </children>
+      </VBox>
+      <Pane layoutX="9.0" layoutY="7.0" prefHeight="99.0" prefWidth="1589.0" style="-fx-background-color: #1e2b3c;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="77.0" layoutX="571.0" layoutY="47.0" stroke="#1e2b3c" strokeType="OUTSIDE" strokeWidth="5.0" width="296.0" />
+            <Label layoutX="636.0" layoutY="18.0" prefHeight="106.0" prefWidth="181.0" text="voitures" textAlignment="CENTER">
+               <font>
+                  <Font name="Harlow Solid Italic" size="60.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="logoutLink" layoutX="1148.0" layoutY="49.0" onAction="#logout" text="Log Out" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Hyperlink>
+            <ImageView fitHeight="83.0" fitWidth="59.0" layoutX="1174.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/projet%20aziz%20ben%20smida/projet%20aziz%20ben%20smida/src/img/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="logo1" fitHeight="99.0" fitWidth="166.0" layoutX="22.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Sans%20titre%20-%203.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <ColorPicker fx:id="mycolorpicker" layoutX="401.0" layoutY="240.0" prefHeight="25.0" prefWidth="150.0" />
+      <ComboBox fx:id="cb_model" editable="true" layoutX="401.0" layoutY="192.0" onMouseClicked="#cbset" prefWidth="150.0" />
+   </children>
+</AnchorPane>
