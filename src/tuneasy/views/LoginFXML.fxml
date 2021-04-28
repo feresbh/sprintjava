@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #364e75;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuneasy.views.LoginFXMLController">
+   <children>
+      <TextField fx:id="emailTextField" layoutX="256.0" layoutY="132.0" promptText="e-mail ... " />
+      <PasswordField fx:id="passwordTextField" layoutX="256.0" layoutY="197.0" promptText="password ..." />
+      <Button fx:id="loginButton" layoutX="300.0" layoutY="244.0" mnemonicParsing="false" text="Login" />
+      <Button fx:id="signupButton" layoutX="261.0" layoutY="289.0" mnemonicParsing="false" text="Create an account ? " />
+      <Button fx:id="resetPasswordButton" layoutX="412.0" layoutY="231.0" mnemonicParsing="false" text="Forget Password?" />
+      <ImageView fitHeight="206.0" fitWidth="204.0" layoutX="14.0" layoutY="98.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/icon2.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="194.0" layoutY="27.0" text="Login to Guidni" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
