@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="ListAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pijihene.FXMLexposeeuserController">
+   <children>
+      <ScrollPane fx:id="ScrollPane1" layoutX="74.0" layoutY="119.0" prefHeight="581.0" prefWidth="1198.0" style="-fx-background-color: transparent;">
+        <content>
+          <AnchorPane fx:id="growPane" minHeight="0.0" minWidth="0.0" prefHeight="692.0" prefWidth="1370.0" style="-fx-background-color: white;">
+               <children>
+                  <GridPane fx:id="gridP" layoutX="14.0" layoutY="147.0" prefHeight="298.0" prefWidth="454.0" style="-fx-background-color: white;">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="240.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="238.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="238.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="238.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ImageView fitHeight="20.0" fitWidth="18.0" layoutX="1169.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox layoutX="182.0" layoutY="91.0" prefHeight="201.0" prefWidth="168.0" />
+      <Text fx:id="testText" layoutX="159.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      
+   </children>
+</AnchorPane>
