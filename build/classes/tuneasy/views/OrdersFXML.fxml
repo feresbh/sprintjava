@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="636.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tuneasy.views.OrdersFXMLController">
+   <children>
+      <TableView fx:id="ordersTableView" layoutX="309.0" layoutY="141.0" prefHeight="335.0" prefWidth="443.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="72.0" text="#" />
+          <TableColumn fx:id="idUserColumn" prefWidth="82.0" text="id User" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="94.0" text="Description" />
+            <TableColumn fx:id="totalColumn" minWidth="0.0" prefWidth="81.0" text="Total" />
+            <TableColumn fx:id="statusColumn" prefWidth="109.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="updateStatusButton" layoutX="601.0" layoutY="541.0" mnemonicParsing="false" text="Update Status" />
+      <Button fx:id="showDetailsButton" layoutX="480.0" layoutY="541.0" mnemonicParsing="false" text="Show Details" />
+      <PieChart fx:id="piechart" layoutX="882.0" layoutY="154.0" prefHeight="328.0" prefWidth="335.0" />
+      <VBox prefHeight="636.0" prefWidth="148.0" spacing="11.0" style="-fx-background-color: #1e2b3c;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/loggo.png" />
+               </image></ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Button blendMode="OVERLAY" mnemonicParsing="false" prefHeight="49.0" prefWidth="202.0" text="Products">
+               <font>
+                  <Font name="Harlow Solid Italic" size="21.0" />
+               </font></Button>
+            <Button blendMode="HARD_LIGHT" mnemonicParsing="false" prefHeight="58.0" prefWidth="215.0" text="Order">
+               <font>
+                  <Font name="Harlow Solid Italic" size="24.0" />
+               </font></Button>
+            <Button fx:id="disc" blendMode="OVERLAY" mnemonicParsing="false" prefHeight="42.0" prefWidth="202.0" text="Disconnect">
+               <font>
+                  <Font name="Harlow Solid Italic" size="18.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <Pane layoutX="126.0" layoutY="-58.0" prefHeight="137.0" prefWidth="1182.0" style="-fx-background-color: #1e2b3c;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="60.0" layoutX="325.0" layoutY="105.0" stroke="#1e2b3c" strokeType="OUTSIDE" strokeWidth="5.0" width="200.0" />
+            <Label layoutX="379.0" layoutY="107.0" text="Orders">
+               <font>
+                  <Font name="Harlow Solid Italic" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="exel" layoutX="730.0" layoutY="541.0" mnemonicParsing="false" text="To Excel" />
+   </children>
+</AnchorPane>
